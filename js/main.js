@@ -22,3 +22,10 @@ function open(evt){
     tabTarget.classList.add('tabs__btn-item--active')
     document.querySelector(`#${button}`).classList.add('tabs__content-item-activ')
 }
+
+const menuBtn = document.querySelector('.menu-btn')
+const menu = document.querySelector('.menu')
+
+menuBtn.addEventListener('click',()=>{
+    menu.classList.toggle('menu--active')
+} )
